@@ -39,6 +39,7 @@ is_down = False
 click_ctr = 1
 offset = 0 # pixels
 
+# Main loop
 while not keyboard.is_pressed("`"):
     if click_ctr > 100:
         click_ctr = 1
