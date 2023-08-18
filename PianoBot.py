@@ -4,9 +4,8 @@ import keyboard
 import time
 import mouse
 import array as arr
-import msvcrt
 
-pyautogui.PAUSE = 0
+pyautogui.PAUSE = 0 # remove pyautogui delay
 dim = get_dimensions()
 
 def move_mouse(x : int, y : int):

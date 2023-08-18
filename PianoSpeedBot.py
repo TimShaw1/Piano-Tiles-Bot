@@ -4,7 +4,6 @@ import keyboard
 import time
 import mouse
 import array as arr
-import msvcrt
 
 pyautogui.PAUSE = 0
 dim = get_dimensions()
