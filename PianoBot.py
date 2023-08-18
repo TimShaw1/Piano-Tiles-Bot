@@ -1,11 +1,9 @@
-import pyautogui
 from utility import *
 import keyboard
 import time
 import mouse
 import array as arr
 
-pyautogui.PAUSE = 0 # remove pyautogui delay
 dim = get_dimensions()
 
 def move_mouse(x : int, y : int):
@@ -32,7 +30,8 @@ black = (0,0,0)
 for i in range(4):
     pixel = getpixel(x_list[i], y)
     if get_max_pixel_diff(pixel, start_col) < 3:
-        pyautogui.click(x_list[i], y)
+        move_mouse(x_list[i], y)
+        mouse.click()
 
 y = dim[1] + round(dim[3] / 2)
 
