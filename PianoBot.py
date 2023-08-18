@@ -60,7 +60,7 @@ while not keyboard.is_pressed("`"):
         pixel = getpixel(x_list[i], y)
 
         # Lower pixel to catch misses
-        pixel2 = getpixel(x_list[i], y + 300)
+        pixel2 = getpixel(x_list[i], y + 290)
 
         if get_max_pixel_diff(pixel2, black) < 30:
             # Release hold
